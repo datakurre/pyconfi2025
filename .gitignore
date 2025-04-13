@@ -1,0 +1,29 @@
+.DS_Store
+.direnv
+*.aux
+*.egg-info
+*.fdb_latexmk
+*.fls
+*.fs
+*.fs.*
+*.log
+*.nav
+*.out
+*.pdf
+*.pyc
+*.snm
+*.toc
+*.vrb
+/.idea/
+/_minted-*/
+/build/
+
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
