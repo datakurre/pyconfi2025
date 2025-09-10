@@ -1,4 +1,4 @@
-TEXFILE ?= archipylago
+TEXFILE ?= tivia
 
 .PHONY: all
 all: build
