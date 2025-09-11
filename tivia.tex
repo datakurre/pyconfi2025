@@ -27,13 +27,6 @@
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \DeclareGraphicsExtensions{.png,.pdf,.eps}
-\tikzset{
-  invisible/.style={opacity=0},
-  visible on/.style={alt={#1{}{invisible}}},
-  alt/.code args={<#1>#2#3}{%
-    \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
-  },
-}
 \usetikzlibrary{arrows, shapes}
 
 % Various
@@ -248,7 +241,7 @@ export default App;
   % External components
   \node[draw, fill=red!10, minimum width=3.5cm, minimum height=0.7cm] (presentation) at ([yshift=-1cm]restapi.south) {\footnotesize Frontend / Volto};
   \node[draw, fill=red!10, minimum width=3.5cm, minimum height=0.7cm, anchor=west] (process) at ([xshift=1.2cm]restapi.east) {\footnotesize Operaton BPM};
-  \node[draw, fill=red!10, minimum width=3.5cm, minimum height=0.7cm, anchor=north] (integrations) at ([xshift=0cm,yshift=-0.7cm]process.south) {\footnotesize Microservices};
+  \node[draw, fill=red!10, minimum width=3.5cm, minimum height=0.7cm, anchor=north] (integrations) at ([xshift=0cm,yshift=-0.7cm]process.south) {\footnotesize Custom Code};
 
   % Bidirectional arrows (external components <-> REST API)
   \draw[<->, thick] (presentation.north) -- (restapi.south);
