@@ -122,7 +122,7 @@
   % REST API box
   \node[draw, thick, rounded corners, fill=none, minimum width=6.2cm, minimum height=3.5cm, label=above:{REST API}] (restapi) {};
   % Headless CMS box inside REST API
-  \node[draw, thick, fill=blue!10, minimum width=4.8cm, minimum height=2.2cm, label=above:{\textbf{Plone CMS}}] (cms) at (restapi.center) {};
+  \node[draw, thick, fill=blue!10, minimum width=4.8cm, minimum height=2.2cm] (cms) at (restapi.center) {};
   % Content inside CMS
   \node[draw, fill=red!10, minimum width=3.0cm, minimum height=0.9cm] (content) at (cms.center) {\footnotesize Backend / Classic};
 
@@ -236,13 +236,13 @@ export default App;
 
 %---------------------------------------------------------------------------------------
 
-\begin{frame}{Plone CMS with BPMN orchestration}
+\begin{frame}{Plone CMS with BPMN driven orchestration}
 \centering
 \begin{tikzpicture}[every node/.style={font=\sffamily}]
   % REST API box
   \node[draw, thick, rounded corners, fill=none, minimum width=6.2cm, minimum height=3.5cm, label=above:{REST API}] (restapi) {};
   % Headless CMS box inside REST API
-  \node[draw, thick, fill=blue!10, minimum width=4.8cm, minimum height=2.2cm, label=above:{\textbf{Plone CMS}}] (cms) at (restapi.center) {};
+  \node[draw, thick, fill=blue!10, minimum width=4.8cm, minimum height=2.2cm] (cms) at (restapi.center) {};
   % Content inside CMS
   \node[draw, fill=red!10, minimum width=3.0cm, minimum height=0.9cm] (content) at (cms.center) {\footnotesize Backend / Classic};
 

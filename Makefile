@@ -12,10 +12,10 @@ help:
 %.pdf: %.tex images
 	@latexmk -pdf -recorder -interaction=nonstopmode -shell-escape -use-make -quiet $<
 
-build: public-announcement.pdf $(TEXFILE).pdf  ## Build the final PDF
+build: public-announcement.pdf archipylago.pdf $(TEXFILE).pdf  ## Build the final PDF
 	mkdir -p build
 	mv *.pdf build
-	echo '<meta http-equiv="refresh" content= "0;url=tivia.pdf" />' > build/index.html
+	echo '<meta http-equiv="refresh" content= "0;url=archipylago.pdf" />' > build/index.html
 	touch build/.nojekyll
 
 .PHONY: watch
